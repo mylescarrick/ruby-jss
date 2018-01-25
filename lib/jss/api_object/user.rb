@@ -262,8 +262,7 @@ module JSS
       user.add_element('phone_number').text = @phone_number
       user.add_element('position').text = @position
 
-      ldap = user.add_element('ldap_server')
-      ldap.add_element('name').text = @ldap_server
+      user.add_element('ldap_server').text = @ldap_server
 
       user << JSS::Site.xml_list(@sites)
 
