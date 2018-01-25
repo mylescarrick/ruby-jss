@@ -167,7 +167,8 @@ module JSS
       @phone_number = @init_data[:phone_number]
       @position = @init_data[:position]
       @ldap_server = JSS::APIObject.get_name @init_data[:ldap_server]
-      @sites = @init_data[:sites] ? @init_data[:sites]  : []
+      @sites = @init_data[:sites] ? @init_data[:sites]  : []      
+      @extension_attributes = @init_data[:extension_attributes]
 
       if @init_data[:links]
         @computers = @init_data[:links][:computers]
